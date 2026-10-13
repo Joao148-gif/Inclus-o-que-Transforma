@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inclusão que Transforma: tecnologia, acessibilidade e inovação para todos.">
+  <title>Inclusão que Transforma</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="header">
+    <a href="#inicio" class="logo" aria-label="Inclusão que Transforma, início">
+      <span class="logo-icon" aria-hidden="true">✳</span>
+      Inclusão<span class="logo-light"> que Transforma</span>
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#equipa">Equipa</a>
+      <a href="#kanban">Kanban</a>
+    </nav>
+
+    <button id="contraste" class="btn btn-outline"
+      aria-pressed="false">Alto contraste</button>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="tag">TECNOLOGIA COM PROPÓSITO</span>
+        <h1>Um mundo mais acessível começa com <span>uma ideia.</span></h1>
+        <p>
+          Desenvolvemos soluções tecnológicas para eliminar barreiras,
+          promover autonomia e transformar a inclusão em realidade.
+        </p>
+        <div class="hero-actions">
+          <a href="#recursos" class="btn btn-primary">Explorar soluções ↗</a>
+          <a href="#sobre" class="btn btn-outline">Conhecer o projeto</a>
+        </div>
+        <div class="hero-note">
+          <span aria-hidden="true">●</span>
+          Inclusão, inovação e oportunidades para todos.
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Princípios do projeto">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="visual-center" aria-hidden="true">✳</div>
+        <div class="float-card card-top">
+          <span>◉</span> Acessibilidade
+        </div>
+        <div class="float-card card-left">
+          <span>◈</span> Autonomia
+        </div>
+        <div class="float-card card-right">
+          <span>✦</span> Inovação
+        </div>
+        <div class="visual-caption">A tecnologia deve incluir todos.</div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Áreas de atuação">
+      <div><strong>01</strong><span>Empatia</span></div>
+      <div><strong>02</strong><span>Tecnologia assistiva</span></div>
+      <div><strong>03</strong><span>Design inclusivo</span></div>
+      <div><strong>04</strong><span>Impacto social</span></div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="section-heading">
+        <span class="tag">A NOSSA MISSÃO</span>
+        <h2>A inclusão não é um detalhe.<br>É o ponto de partida.</h2>
+        <p>
+          O projeto Inclusão que Transforma nasceu do desafio de usar
+          a tecnologia para reduzir barreiras enfrentadas por pessoas
+          com deficiência auditiva, visual, baixa visão ou daltonismo.
+        </p>
+      </div>
+
+      <div class="mission-card">
+        <span class="mission-icon" aria-hidden="true">✳</span>
+        <h3>Desenvolver para todos</h3>
+        <p>
+          Investigar problemas reais, criar protótipos, testar soluções
+          e melhorar a experiência de cada utilizador.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="recursos">
+      <div class="section-heading">
+        <span class="tag">SOLUÇÕES INCLUSIVAS</span>
+        <h2>Tecnologia que remove barreiras.</h2>
+        <p>Conhece algumas das funcionalidades que podem tornar
+          a experiência digital mais acessível.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">◉</div>
+          <h3>Acessibilidade visual</h3>
+          <p>Contraste reforçado, texto ajustável e interfaces legíveis
+            para pessoas com baixa visão.</p>
+          <button class="text-button" data-info="visual">Saber mais ↗</button>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">♫</div>
+          <h3>Apoio auditivo</h3>
+          <p>Legendas, informação visual e transcrição de voz para
+            facilitar o acesso à comunicação.</p>
+          <button class="text-button" data-info="auditiva">Saber mais ↗</button>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">◈</div>
+          <h3>Leitura por voz</h3>
+          <p>Conversão de texto em áudio para apoiar pessoas cegas
+            e utilizadores com dificuldades de leitura.</p>
+          <button class="text-button" data-info="voz">Saber mais ↗</button>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">▧</div>
+          <h3>Daltonismo</h3>
+          <p>Informações identificadas também por texto, símbolos
+            e formas, sem depender apenas das cores.</p>
+          <button class="text-button" data-info="daltonismo">Saber mais ↗</button>
+        </article>
+      </div>
+      <p id="info-recurso" class="info-panel" role="status" hidden></p>
+    </section>
+
+    <section class="section" id="ferramentas">
+      <div class="section-heading">
+        <span class="tag">EXPERIMENTA</span>
+        <h2>Funcionalidades de acessibilidade.</h2>
+        <p>Experimenta as opções disponíveis neste protótipo.</p>
+      </div>
+
+      <div class="tool-grid">
+        <article class="tool-card">
+          <span class="tool-symbol" aria-hidden="true">Aа</span>
+          <h3>Tamanho do texto</h3>
+          <p>Ajusta o tamanho da letra para facilitar a leitura.</p>
+          <div class="tool-actions">
+            <button class="btn btn-outline" id="diminuir"
+              aria-label="Diminuir tamanho do texto">A−</button>
+            <button class="btn btn-primary" id="aumentar"
+              aria-label="Aumentar tamanho do texto">A+</button>
+            <button class="btn btn-outline" id="normalizar">Normal</button>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <span class="tool-symbol" aria-hidden="true">◖</span>
+          <h3>Leitura por voz</h3>
+          <p>O navegador lê o texto principal em voz alta, se suportado.</p>
+          <div class="tool-actions">
+            <button class="btn btn-primary" id="ler">▶ Ouvir texto</button>
+            <button class="btn btn-outline" id="parar">■ Parar</button>
+          </div>
+          <p id="estado-voz" class="small-status" role="status"
+            aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="equipa">
+      <div class="section-heading">
+        <span class="tag">TRABALHO COLABORATIVO</span>
+        <h2>Seis pessoas. Uma missão.</h2>
+        <p>Uma equipa organizada transforma uma boa ideia num
+          protótipo funcional.</p>
+      </div>
+
+      <div class="team-grid">
+        <article><span>01</span><h3>Gestor de projeto</h3>
+          <p>Organiza as tarefas, acompanha prazos e conduz as reuniões.</p></article>
+        <article><span>02</span><h3>Documentador</h3>
+          <p>Regista requisitos, decisões e documentação do projeto.</p></article>
+        <article><span>03</span><h3>Programador 1</h3>
+          <p>Desenvolve funcionalidades e estrutura do sistema.</p></article>
+        <article><span>04</span><h3>Programador 2</h3>
+          <p>Implementa recursos e integra os componentes.</p></article>
+        <article><span>05</span><h3>Programador 3</h3>
+          <p>Realiza testes, corrige erros e verifica o funcionamento.</p></article>
+        <article><span>06</span><h3>Designer UI/UX</h3>
+          <p>Cuida da interface, legibilidade e experiência inclusiva.</p></article>
+      </div>
+      <p class="small-status">Substitui os papéis pelos nomes dos membros da tua equipa.</p>
+    </section>
+
+    <section class="section" id="kanban">
+      <div class="section-heading">
+        <span class="tag">GESTÃO ÁGIL</span>
+        <h2>Do planeamento à entrega.</h2>
+        <p>Adiciona tarefas e acompanha o progresso do projeto.</p>
+      </div>
+
+      <form id="form-tarefa" class="task-form">
+        <label for="nova-tarefa">Nova tarefa</label>
+        <input id="nova-tarefa" name="tarefa"
+          placeholder="Ex.: Testar leitura por voz" required>
+        <label for="responsavel">Responsável</label>
+        <select id="responsavel" name="responsavel">
+          <option>Gestor de projeto</option>
+          <option>Documentador</option>
+          <option>Programador 1</option>
+          <option>Programador 2</option>
+          <option>Programador 3</option>
+          <option>Designer UI/UX</option>
+        </select>
+        <button class="btn btn-primary" type="submit">+ Adicionar tarefa</button>
+      </form>
+
+      <div class="kanban">
+        <div class="kanban-column">
+          <h3>Backlog <span id="count-backlog">0</span></h3>
+          <div class="task-list" id="backlog"></div>
+        </div>
+        <div class="kanban-column">
+          <h3>Em progresso <span id="count-progresso">0</span></h3>
+          <div class="task-list" id="progresso"></div>
+        </div>
+        <div class="kanban-column">
+          <h3>Em teste <span id="count-teste">0</span></h3>
+          <div class="task-list" id="teste"></div>
+        </div>
+        <div class="kanban-column">
+          <h3>Concluído <span id="count-concluido">0</span></h3>
+          <div class="task-list" id="concluido"></div>
+        </div>
+      </div>
+      <p class="small-status" id="estado-tarefas" role="status"
+        aria-live="polite">As tarefas ficam guardadas durante esta sessão.</p>
+    </section>
+
+    <section class="final-cta">
+      <span class="tag">O FUTURO É INCLUSIVO</span>
+      <h2>Uma ideia pode transformar muitas vidas.</h2>
+      <p>Aprender, colaborar, desenvolver e tornar o mundo mais acessível.</p>
+      <a href="#inicio" class="btn btn-primary">Voltar ao início ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="logo">✳ Inclusão que Transforma</a>
+    <p>Projeto educativo de inovação e acessibilidade · SESI</p>
+    <p>Protótipo académico desenvolvido com HTML, CSS e JavaScript.</p>
+  </footer>
+</body>
+</html>
